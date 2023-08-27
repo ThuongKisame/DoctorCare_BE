@@ -1,0 +1,30 @@
+{
+    "name": "back_end-nodejs",
+    "version": "1.0.0",
+    "description": "learn back-end",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon --exec babel-node src/server.js"
+    },
+    "author": "Nhat_Thuong",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.1.4",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2",
+        "jsonwebtoken": "^9.0.1",
+        "mysql2": "^3.3.4",
+        "sequelize": "^6.32.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.22.5",
+        "@babel/node": "^7.22.5",
+        "@babel/preset-env": "^7.22.5",
+        "nodemon": "^2.0.22",
+        "sequelize-cli": "^6.6.1"
+    }
+}

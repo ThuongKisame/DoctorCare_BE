@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HoiDanIT</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <h1>get crud</h1>
+        <% var dataArray = data; %>
+        <table class="table">
+            <!-- ... -->
+            <tbody>
+                <% dataArray.forEach(function(e) { %>
+                <tr>
+                    <td><%= e.id %></td>
+                    <td><%= e.email %></td>
+                    <td><%= e.firstName %></td>
+                    <td><%= e.lastName %></td>
+                    <td><%= e.address %></td>
+                    <td><%= e.phoneNumber %></td>
+                    <td><%= e.image %></td>
+                    <td><%= e.roleId %></td>
+                    <td><%= e.positionId %></td>
+                    <td class="d-flex align-items-center justify-content-center">
+                        <a href="/edit-crud?id=<%= e.id %>" class="btn btn-primary mr-2">Edit</a>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </body>
+</html>
